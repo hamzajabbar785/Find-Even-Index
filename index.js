@@ -34,9 +34,7 @@
 
 const findEvenIndex = (arr) => {
     let left = 0
-    console.log(left)
     let right = arr.reduce((a,b) => a + b, 0)
-    console.log(right)
     for(let i = 0; i < arr.length; i++){
         right -= arr[i]
         if(right === left) return i
